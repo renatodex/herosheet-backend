@@ -9,14 +9,14 @@ describe ApiController do
   describe "GET #list_team_heros" do
     it "responds successfully with an HTTP 200 status code" do
       Team.should_receive(:find).and_return(team)
-      TeamHero.stub_chain(:find, :order).and_return(team_heroes)      
+      TeamHero.should_receive(:find).with(:all, {:order => "created_at ASC"}).and_return(team_heroes)      
       get :list_team_heroes
       expect(response).to be_success
     end
     
     it "should respond a valid json file" do
       Team.should_receive(:find).with("1").and_return(team)
-      TeamHero.stub_chain(:find, :order).and_return(team_heroes)
+      TeamHero.should_receive(:find).with(:all, {:order => "created_at ASC"}).and_return(team_heroes)
       get :list_team_heroes, :team_id => "1"
       
       response.body.should eq({

@@ -1,7 +1,7 @@
 class ApiController < ApplicationController
   def list_team_heroes
     team = Team.find(params[:team_id])
-    team_heroes = TeamHero.find(:all).order("created_at ASC")
+    team_heroes = TeamHero.find(:all, { :order => "created_at ASC" })
     render :json => {
       :team => {
         :nome => team.name,
