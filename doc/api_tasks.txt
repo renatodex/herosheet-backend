@@ -1,0 +1,23 @@
+Coisas que o Backend precisa saber fazer:
+
+- listar os heróis: 
+	parametros: nenhum
+	descrição: porque precisamos ter o ID de cada herói que vai nos permitir fazer as operações mais brutas.
+
+- somar ao hp de um herói:
+	parametros: valor(positivo ou negativo) a ser somado, id do herói
+	descrição: porque precisamos ter uma maneira de alterar o hp do herói
+	
+- somar o healing surge de um herói:
+	parametors: valor(positivo ou negativo) a ser somado, id do herói
+	descrição: porque precisamos ter uma maneira de alterar o hs do herói
+	
+- somar action point do herói
+	parametros: valor(positivo ou negativo) a ser somado, id do herói
+	descrição: porque precisamos ter uma maneira de alterar os actions points do heroi
+	
+- criar novo poder de herói
+	parametros: id do herói, nome do poder, valor do poder
+	
+- remover novo poder de herói
+	parametros: id do herói, nome do poder, valor do poder

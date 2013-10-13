@@ -1,4 +1,16 @@
 Herosheet::Application.routes.draw do
+  get "api/list_team_heroes"
+
+  get "api/update_hero_hit_points"
+
+  get "api/update_hero_healing_surges"
+
+  get "api/update_hero_temporary_hit_points"
+
+  get "api/update_hero_action_points"
+  
+  post "api/update_hero_sheet"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

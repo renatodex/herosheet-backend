@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  TeamHero: 
+  power_name: MyString
+  power_value: MyString
+
+two:
+  TeamHero: 
+  power_name: MyString
+  power_value: MyString

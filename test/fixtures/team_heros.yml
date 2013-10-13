@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Team: 
+  name: MyString
+  total_hit_points: 1
+  total_healing_surges: 1
+  actual_hit_points: 1
+  actual_healing_surges: 1
+  action_points: 1
+  temporary_hit_points: 1
+
+two:
+  Team: 
+  name: MyString
+  total_hit_points: 1
+  total_healing_surges: 1
+  actual_hit_points: 1
+  actual_healing_surges: 1
+  action_points: 1
+  temporary_hit_points: 1

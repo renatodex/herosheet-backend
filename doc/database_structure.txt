@@ -1,0 +1,24 @@
+Entidade: Grupo de RPG
+	- name: team
+	- fields:
+		-> id
+		-> name
+		
+Entidade: Heroi
+	- name: team_hero
+	- fields:
+		-> id
+		-> name
+		-> total_hit_points
+		-> total_healing_surges
+		-> actual_hit_points
+		-> actual_healing_surges
+		-> action_points
+		
+Entidade: Poderes do Herói
+	- name: team_hero_powers
+	- fields:
+		-> id
+		-> team_hero_id
+		-> power_name		
+		-> power_value
